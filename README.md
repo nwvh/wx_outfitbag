@@ -3,6 +3,6 @@
 https://streamable.com/6zpycr
 
 # Requirements
-ox_lib
-ox_inventory
-Any clothing store-like script that supports wardrobes or other forms of outfit saving and changing (like https://github.com/iLLeniumStudios/illenium-appearance)
+- ox_lib<br>
+- ox_inventory<br>
+- Any clothing store-like script that supports wardrobes or other forms of outfit saving and changing (like [illenium-appearance](https://github.com/iLLeniumStudios/illenium-appearance))
