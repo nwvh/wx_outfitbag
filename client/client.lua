@@ -78,7 +78,8 @@ exports.ox_target:addModel("bkr_prop_duffel_bag_01a", options)
 
 RegisterNetEvent('wx_outfitbag:place')
 AddEventHandler('wx_outfitbag:place',function ()
-	while not HasModelLoaded(GetHashKey("bkr_prop_duffel_bag_01a")) do Citizen.Wait(10) DebugPrint('Loading bag model...') end
+	RequestModel(`bkr_prop_duffel_bag_01a`)
+	while not HasModelLoaded(`bkr_prop_duffel_bag_01a`)) do Citizen.Wait(10) DebugPrint('Loading bag model...') end
 	local ped = PlayerPedId()
 	local count = lib.callback.await('ox_inventory:getItemCount', false, wx.NeededItem, {})
 	local x,y,z = table.unpack(GetEntityCoords(ped))
